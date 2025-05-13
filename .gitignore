@@ -1,2 +1,5 @@
 # Add venv to git:
 .data_filler_venv/
+
+# Add sandbox to gitignore:
+sandbox/
