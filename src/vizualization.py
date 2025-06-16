@@ -7,8 +7,6 @@ def mse_vizualization(values: np.ndarray):
     x = np.arange(len(values)) + 1
     plt.errorbar(x, values)
 
-
-
     plt.xlabel("Iteration")
     plt.ylabel("MSE")
     plt.xticks(x)
