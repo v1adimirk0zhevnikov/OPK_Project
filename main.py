@@ -17,9 +17,10 @@ mask = data_with_skips.isna().values
 
 
 #====VIZUAL WITH MATPLOTLIB====#
-val: np.ndarray = np.zeros(20)
+mse_values: np.ndarray = np.zeros(20)
 for j in range(20):
     data_with_skips = em_alg(data_with_skips, mask, epochs=1)
-    val[j] = mse(data_with_skips, dataset, mask)
+    mse_values[j] = mse(data_with_skips, dataset, mask)
 
-mse_vizualization(val)
+
+mse_vizualization(mse_values)
