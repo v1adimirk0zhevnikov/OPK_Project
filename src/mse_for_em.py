@@ -1,8 +1,10 @@
 import numpy as np
 
 
-def mse(data: np.ndarray, true_data: np.ndarray):
+def mse(data: np.ndarray, true_data: np.ndarray, mask: np.ndarray):
     """
-    Function MSE (mean squared error) 
+    Function MSE (mean squared error)
+    compare true values with imputed
     """
-    return np.mean((data - true_data) ** 2)
+    masked_diff = true_data[mask] - data[~mask]  
+    return np.mean(masked_diff **2)
