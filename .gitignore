@@ -3,3 +3,6 @@
 
 # Add sandbox to gitignore:
 sandbox/
+
+# Add cache:
+src/__pycache__/
