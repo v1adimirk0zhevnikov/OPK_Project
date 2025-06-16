@@ -16,9 +16,9 @@ def mse_vizualization(values: np.ndarray):
     plt.show()
 
 
-def mse_at_diff_probablity(prob_values: pd.DataFrame):
+def mse_diff_prob_vizualization(prob_values: pd.DataFrame):
 
-    X, Y = np.meshgrid(np.arange(20) + 1, [x / 100 for x in range(10, 31)])
+    X, Y = np.meshgrid(np.arange(20) + 1, [x / 100 for x in range(1, 31)])
     Z = prob_values.T
     fig = plt.figure()
     ax = fig.add_subplot(111, projection="3d")
