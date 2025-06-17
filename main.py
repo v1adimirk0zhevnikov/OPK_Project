@@ -11,7 +11,7 @@ def start():
     """
     Function for start project
     """
-#=====GET DATA=====#
+    #=====GET DATA=====#
     PATH: str = "data\\data_iris.csv"
     PATH3: str = "data\\data_iris_after_em.csv"
     dataset: pd.DataFrame = pd.read_csv(PATH)
